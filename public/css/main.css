@@ -1,0 +1,9 @@
+@import "./reset.css";
+@import "./theme.css";
+
+h1 {
+    font-family: var(--fn-p);
+    font-weight: var(--w-4);
+    font-size: var(--sz-6);
+    color: var(--tx-inv)
+}
