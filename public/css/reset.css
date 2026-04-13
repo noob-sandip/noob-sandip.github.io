@@ -1,18 +1,14 @@
 /* Add border-box sizing model */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 /* Remove default margins, paddings, borders and outlines from all elements */
 *,
 *::before,
 *::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
+  list-style: none;
 }
 
 /* Global line-height*/
@@ -24,7 +20,6 @@ body {
 h1,
 h2,
 h3,
-h4,
 button,
 input,
 label {
@@ -35,10 +30,7 @@ label {
 p,
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   overflow-wrap: break-word;
 }
 
@@ -49,20 +41,8 @@ p {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   text-wrap: balance;
-}
-
-/* Ordered and unordered lists are unstyled by default 
-Unstyled lists are not announced by VoiceOver Technologies. 
-Add a "list" role to the element, if its truly a list. */
-ol,
-ul,
-menu {
-  list-style: none;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -79,7 +59,6 @@ select {
 img,
 picture,
 video,
-canvas,
 svg {
   display: block;
   max-width: 100%;
